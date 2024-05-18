@@ -78,7 +78,7 @@ const WebSock = () => {
                 <div className="messages">
                     {messages.map((mess) => 
                         <div className="message" key={mess.id}>
-                            {mess.event === 'conection'
+                            {mess.event === 'connection'
                                 ? <div className="connection_message">Пользователь {mess.username} подключился</div>
                                 : <div className="message">{mess.username}. {mess.message}</div>
                             }
